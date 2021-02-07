@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Potta+One&display=swap" 
+rel="stylesheet">
+    <title>CSS Flexbox Project-1</title>
+    <style>
+        body{
+            background-color:#FAAC58;
+        }
+        .layout{
+            width: 1750px;
+            height: 820px;
+            /* border:4px solid darkblue; */
+            padding: 10px;
+            /* margin: 10px; */
+            margin-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-flow: column wrap;
+            background-color: white;
+        }
+        .layout-elem{
+            width: 1700px;
+            height: 110px;
+            margin: 10px;
+            /* margin-left: 50px; */
+            padding: 5px;
+        }
+        #head{
+            flex-basis: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            background-color: #FF8000;
+            color: black;
+            font-size: 25px;
+            border: 3px solid darkblue ;
+        }
+        p#logo{
+            font-family: 'Potta One', cursive;
+            font-size: 40px;
+        }
+        #logo{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        p#comp-name{
+            font-size: 30px;
+        }
+        #tagline{
+            align-self: flex-end;
+            margin-left: 200px;
+            font-family: 'Inconsolata', monospace;
+            font-size: 25px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #08088A;
+            color: white;
+             }
+        #menu{
+            align-self: flex-start;
+            display: flex;
+            flex-flow: row wrap;
+            margin: 10px;
+            margin-top: 35px;
+        }
+
+        a{
+            color: black;
+            padding: 6px;
+            box-shadow: 3px 3px 3px 3px;
+            margin: 15px;
+            text-decoration: none;
+        }
+        #section{
+            margin-top: 20px;
+            flex-basis: 370px;
+            display: flex;
+            flex-flow: row wrap;
+             /* border:4px solid darkblue; */
+             margin-bottom: 10px;
+             /* padding-bottom: 10px; */
+             background-color: #BDBDBD;
+        }
+        #item-1{
+            margin: 10px;
+            font-size: 25px;
+            /* padding: 10px; */
+            margin-left: 70px;
+            margin-top: 10px;
+            text-decoration: underline;
+            border: 1.5px dashed black;
+            height: 350px ;
+        }
+        #item-2{
+            margin: 10px;
+            font-size: 25px;
+            margin-left: 70px;
+            margin-top: 10px;
+            text-decoration: underline;
+            border: 1.5px dashed black;
+            height: 350px ;
+        }
+        #item-3{
+            margin: 10px;
+            font-size: 25px;
+            margin-left: 70px;
+            margin-top: 10px;
+            text-decoration: underline;
+            border: 1.5px dashed black;
+            height: 350px ;
+        }
+        #box{
+            margin-left: 70px;
+            border: 1.5px dashed black;
+            height: 150px;
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #088A85;
+            padding-top: 100px;
+            text-decoration: underline;
+        }
+        #foot{
+            margin-top: 10px;
+            flex-basis: 10px;
+            background-color: #2E2E2E;
+            text-align: center;
+            opacity: 0.9;
+            color: white;
+            border: 3px solid darkblue ;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="layout-elem" id="head">
+            <div id="logo">
+                <img src="logo.jpg" alt="logo" height="130px" width="130px">
+                <p id="comp-name"><u>Moan's Art </u></p>
+            </div>
+            <div id="tagline"><p>We are leading as Global Art & Decoration Hub with over 10M+ customers!!</p></div>
+            <div id="menu">
+                <div id="contact"><a href="1">Contact</a></div>
+                <div id="menuu"><a href="2">Menu</a></div>
+                <div id="about"><a href="3">About US</a></div>
+            </div>
+        </div>
+        <div class="layout-elem" id="section">
+            <div id="box">
+                <h1>Our Premium Collection:</h1>
+            </div>
+            <div id="item-1">
+                <img src="item-1.jpg" height="250px" width="280px">
+                <p>Crescendo Buddha Artwork</p>
+            </div>
+            <div id="item-2">
+                <img src="item-2.jpg" height="250px" width="280px">
+                <p> SailBoat Drowning Sunset</p>
+            </div>
+            <div id="item-3">
+                <img src="item-3.jpg" height="250px" width="280px">
+                <p>Magical Love Is In The Air</p>
+            </div>
+        </div>
+        <div class="layout-elem" id="foot">
+            <p>AUTHOR -- SHIVAM ARORA</p>
+            <p>CSS FLexBox Project-1</p>
+        </div>
+    </div>
+</body>
+</html>
