@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Html tags</title>
+</head>
+<body>
+    <!--HTML table -->
+    <!--border - width=1 to 5  -->
+    <!--cellspacing &cellpadding  :in px  -->
+    <!--table width :in %  -->
+    <table border="2" cellspacing="10px" cellpadding="10px" width="50%">
+        <th>heading</th>
+        <tr>
+            <td>col-1</td>
+            <td>col-2</td>
+            <td>col-3</td>
+        </tr>
+        <tr>
+            <td >data-1</td>
+            <td>data-2</td>
+            <td>data-3</td>
+        </tr>
+    </table>
+    <!--image tag-->
+    <!--image tag properties:
+        1-src,2-alt,3-height/width -->
+
+    <img src="JscqjQA.jpg" alt="hello world" width="200px" height="200px"/>
+    <br>
+    <hr>
+    <!--to embedd any video :-->
+    <!-- copy their embed code & paste in iframe tag-->
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/1C5GSWOJi7I?list=RD1C5GSWOJi7I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <br>
+        <!--working with forms :-->
+        <!--post method->encrypted ,while get method not-->
+        <form method="POST" action="basic.html">
+            <!--fieldset used to divide form in regions -->
+            <fieldset>
+                <!--legend used to make heading of regions-->
+                <legend> SEction -1</legend>
+                <label for="same as id">LABEL-1</label>
+                <!--label for="name"==id="name"in input tag-->
+                <!--input tag attributes-->
+                <input type="text" id="same as id" placeholder="text-1">
+                <input type="submit" value="confirm">  
+                <input type="password">  
+                <input type="tel" placeholder="+91">  
+                <input type="url" placeholder="url@url">  
+                <input type="search" placeholder="search anything">  
+                <input type="email" placeholder="@mail">  
+            </fieldset>
+            <fieldset>
+                <legend> SEction -2</legend>
+                <label>LABEL-2</label>
+                <!--radio buttons used to select one out of many choices-->
+                <input type="reset" value="go_back">
+                <input type="radio" id="radio-1" unchecked>
+                <input type="radio" id="radio-2" checked>
+                <input type="radio" id="radio-3" unchecked>
+                <input type="radio" id="radio-4" unchecked>
+                <br>
+                <label for="select">label-2.1</label>
+                <!--select box-->
+                <select id="select">sel-1
+                    <!--optgroup used for options grouping-->
+                <optgroup label="options">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </optgroup>
+                <optgroup label="opt">
+                    <option>a</option>
+                    <option>b</option>
+                </optgroup>
+            </select>
+            <!--check box used to select many choices at once-->
+            <label for="check">checkbox</label>
+            <input type="checkbox" id="check" name="box">
+            <input type="checkbox" id="check-2" name="box">
+            <input type="checkbox" id="check-3" name="box">
+            <input type="checkbox" id="check-4" name="box">
+            <br>
+            <!--text area tag-->
+            <textarea id="area" rows="10" cols="10">
+            </textarea> 
+            </fieldset>
+            </form>
+            <!--division tags  -->
+            <div>
+                hello world
+            </div>
+            <div>
+                world hello
+            </div>
+            <!--span tags-->
+            <span>
+                hi
+            </span>
+            <span>
+                ho
+            </span>
+            <section>
+                <!--HTML ENTITIES-->
+                <!--entities can be called using name&number ,starting wid & &ending wid ; -->
+                <p> &lt; hi everyone , i am &copy;using &dollar; HTML entities &#8482; &gt; </p>
+            </section>
+            <div>
+                <!-- iframe tag-->
+                <iframe src="basic.html" height="500px" width="500px" name="w3c" frameborder="0">
+
+                </iframe>
+            </div>
+
+            <section>
+                <!--additional tags-->
+                <header>header section</header>
+                <footer>footer section</footer>
+                <nav>navigation menu</nav>
+                <aside>side bar menu's</aside>
+                <!--to add client side scripts-->
+                <script src=""></script>
+            </section>
+</body>
+</html>
