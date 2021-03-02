@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+<link rel="icon" href="h1.jpg">
+<title>CSS BOX MODEL</title>
+    <style>
+        *{
+            background-color: #117A65;
+            color:white;
+        }
+        header{
+            margin-bottom: 2px;
+            padding: 30px 2px 20px 600px;
+            text-decoration:underline;
+            font-size: 60px;
+            font-family: 'Potta One', cursive;
+            border-bottom-style: double;
+            background-color: slategray;
+        }
+        div.box{
+            font-size: 20px;
+            padding-left: 50px;
+            margin-top: 50px;
+            font-family: 'Yusei Magic', sans-serif;
+            padding-bottom: 50px;
+        }
+        div.box ul{
+            list-style-type:armenian;
+        }
+        div.box li{
+            padding:10px 10px 10px 10px;
+            margin: 30px;
+        }
+        div.box p{
+            text-align: center;
+            font-weight: bolder;
+            text-decoration: underline;
+            font-size: 20px;
+            margin-top: 50px;
+
+        }
+        footer{
+            opacity: 50px;
+            background-color: gray;
+            margin-top: 40px;
+            padding:10px;
+            text-align: center;
+            font-size: 30px;
+            border-top-style: double;
+            opacity: 0.8;
+            /*position: fixed;*/
+        }
+        div.menu ul{
+            margin-left: 500px;
+            
+        }
+        div.menu li{
+            list-style-type:none;
+            border: double;
+            width: 50px;
+            margin: 20px;
+            margin-right: 150px;
+            display: inline-block;
+            padding:10px;
+            box-shadow: 5px 5px 5px 5px;
+        }
+        div.menu li a{
+            text-decoration: none;
+        }
+        a:hover{
+            box-shadow: 5px 5px 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>CSS BOX MODEL</header>
+    <div class="menu">
+        <ul>
+            <li><a href="">about</a></li>
+            <li><a href="">menu</a></li>
+            <li><a href="">contact</a></li>
+
+        </ul>
+    </div>
+    <div class="box"><p>Explanation of the different parts:</p>
+        <ul>
+        <li>Content - The content of the box, where text and images appear.</li>
+        <li> Clears an area around the content. The padding is transparent</li>
+        <li>Border - A border that goes around the padding and content</li>
+        <li>Margin - Clears an area outside the border. The margin is transparent</li>
+        </ul>
+        <p>The box model allows us to add a border around elements, and to define space between elements.
+        </p>
+        </div>
+        <footer>&reg; SHIBU_A GROUP	&trade;</footer>
+</body>
+</html>
