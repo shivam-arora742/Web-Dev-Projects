@@ -1,0 +1,29 @@
+@import "basic1.css" ;
+/* ->css commenting
+css formatting : selector{declaration1;declaration2;.....}
+declaration-> {property:value}
+Css types: 1-inline 2-external 3-internal
+inline -> <tag style="declarartion"></tag>
+css selectors:
+1-universal selector: styling is applied to all tags.
+2-type selector: styling is done on specifies html tag/element.
+3-class selector:styling is done on all elements of particular class.
+4-id selector: every element has unique id&styling is done appropriately.
+note: id has more preference than class;
+5-attribute selector: styles an element based on attribute provided.
+6-child selector: styling to child tag is done, only if it is inside parent tag.
+7-descedant selector:styling is done on all childs of parent irrespective of
+ direct parent-relation.
+ 8-adjacent sibling->applied when 2 or more elements r adjacent & sibling
+ 9-general adjacent sibling->applied when 2 or more elements r  sibling but
+  not necessary adjacent.
+  ---------------------------------------------------------------------------
+  #note:
+  *Css Psuedo Class: used to determine state of element.
+  *to prevent overriding of styling of any element ,we use !important after it.
+  *inline styling more precendance
+  */ 
+div{
+    background-color: black;
+    color:white;
+}
