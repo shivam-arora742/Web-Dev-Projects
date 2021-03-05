@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Revision-6</title>
+</head>
+<body>
+    <h1>JS Revision-6</h1>
+    <div id="back">go back</div>
+    <div id="forward">go forward</div>
+    <script>
+        // Arrow Function:
+        // Syntax:function_name=(parameters)=>{}
+        // example:summ=(a,b){return (a+b)};
+
+       /*  // Set Time Out :
+        // The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
+        // syntax:settimeout(function,time)
+        // Tip: 1000 ms = 1 second.
+        // Tip: The function is only executed once.
+        //  If you need to repeat execution, use the setInterval() method.
+        //example: 
+        setTimeout(function(){
+            alert("hello world!!");
+        },5000); */
+
+        /* // SET  INTERVAL:
+        // The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
+        // The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed.
+        // The ID value returned by setInterval() is used as the parameter for the clearInterval() method.
+        // Tip: 1000 ms = 1 second.
+        // Tip: To execute a function only once, after a specified number of milliseconds, use the setTimeout() method.
+        // syntax:setinterval(function,time)
+        // example:
+        clr=setInterval(() => {
+            alert("hello world!!");
+        }, 3000); */
+
+        /* // clear interval:used to stop repeatation of set interval method: 
+        clearInterval(clr); */
+
+        /* // LOCAL STORAGE:IT IS USED TO STORE USER'S DATA.
+        // methods-1:set item; 
+        localStorage.setItem('name','shibu');
+        localStorage.setItem('age','20');
+        // methods-2:get item;
+        tmp=localStorage.getItem('name');
+        console.log(tmp);
+        // methods-3:remove item;
+        localStorage.removeItem('age');
+        // methods-4:clear:remove all items from lists.
+        localStorage.clear();*/
+
+         /* 
+            *JSON:JAVASCRIPT OBJECT NOTATION:
+            
+            *JavaScript Object Notation (JSON) is a standard text-based format for 
+            representing structured data based on JavaScript object syntax. 
+            
+            *A JSON string can be stored in its own file, which is basically
+            just a text file with an extension of .json.
+            
+            *JSON is purely a string with a specified 
+            data format — it contains only properties, no methods.
+         obj={a:1,b:2,c:3};
+        jso = JSON.stringify(obj);
+        console.log(jso);
+        console.log(typeof jso);
+        jsp=JSON.parse('{"a":1,"b":2,"c":3}');
+        console.log(jsp);
+        */
+        
+        
+        /*
+         // BACK TICKS: TEMPLATE LITERALS
+        a=20;
+        console.log(`my age is ${a}`); 
+        */
+      
+    </script> 
+    
+</body>
+</html>

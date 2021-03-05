@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Revision-5</title>
+</head>
+<body>
+    <h2>JS-Revision-5</h2>
+    <div id="first" class="abc">heyyy</div>
+    <div id="second" class="abc efg">byeeee</div>
+    <script>
+        /* //Break & Continue Statements:
+        let arr=[1,2,3,4,5]
+        let n=arr.length;
+        for(a=0;a<n;a++){
+            if(arr[a]==2){
+                continue;
+            }
+            if(arr[a]==4){
+                break;
+            }
+            console.log(arr[a]);
+        } */
+
+       /*  //Array Methods:
+        //To string:
+        let arr=[1,2,3,4,10,0,5];
+        console.log(arr);
+        console.log(arr.toString());
+        //sort array in dictionary form;
+        console.log(arr.sort()); */
+
+        /* //String methods:
+        // 1-string creation
+        let str1="HI";
+        let str2="hello";
+        let str3="byee";
+        //2-access the character:
+        console.log(str1[1]);
+        console.log(str3[3]);
+        //3-string length
+        console.log(str3.length);
+        console.log(str2.length);
+        // 4-upper & lower case;
+        console.log(str1.toLowerCase());
+        console.log(str2.toUpperCase());
+        //5-replace the elment with new :
+        console.log(str1.replace('I','a'));
+        // 6-copy string based on starting & ending points:
+        console.log(str2.slice(1,4)); */
+
+        /* //DOM manip:
+        // 1-inner text & html:
+        document.getElementById("first").innerText="heyyaaa";
+        document.getElementById("second").innerHTML="yo";
+        //2-styling
+        document.getElementById("second").style.backgroundColor="cyan";
+        document.getElementById("first").style.border="2px solid red ";
+        // 3-add/remove class members:
+        let tmp=document.getElementsByClassName("abc");
+        tmp[0].classList.add("dcb");
+        tmp[1].classList.remove("efg");
+        //4-create & append child:
+        temp=document.createElement("div");
+        temp.innerText="shibu_a";
+        tmp[1].appendChild(temp);
+        //5-replace elements:
+        tp=document.createElement('p');
+        tp.innerText="off-onn";
+        tmp[1].replaceChild(tp,temp);
+        //6-remove child:
+        tmp[1].removeChild(tp);
+        //7-document.location
+        console.log(document.location);
+        //document.url:
+        console.log(document.URL);
+        //document.link:
+        console.log(document.links);
+        //docment.title:
+        console.log(document.title);
+        //8-Query Selector:
+        let qs=document.querySelector('#first');
+        console.log(qs);
+        //9-Query Selector All:
+        let qsa=document.querySelectorAll('.abc');
+        console.log(qsa); */
+/* 
+        // EVENTs IN JAVASCRIPT: Any thing that occurs on web page.
+        // Example:onclick,onmouseover,mouseup,mousedown,onmouseout,window.onload;
+       window.onload=function(){
+           console.log("onloaded");
+        }
+           //Event listener:
+           document.getElementById('first').addEventListener('click',function(){
+               console.log("clicked first element");
+            })
+               let a=document.querySelector('#second');
+               a.addEventListener('mouseover',function(){
+                   console.log("overed the mouse!!");
+               })
+                */
+        /* // miscellaneous exercise:
+                let a=document.querySelector('#first');
+                let b=document.querySelector('#second');
+                let prev=b.innerHTML;
+                a.addEventListener('mouseup',function(){
+                    b.innerHTML=prev;
+                })
+                a.addEventListener('mousedown',function(){
+                    b.innerHTML="yoyoyo!!!";
+                }) */
+
+
+        </script>
+</body>
+</html>
