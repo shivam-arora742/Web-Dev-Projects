@@ -1,0 +1,9 @@
+<h1>WEB DEVELOPMENT BASICS REPOSITORY :</h1>
+<br><br>
+<p>IT INCLUDES BASICS TO ADVANCED CONCEPTS OF:</p>
+<br>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>VANILLA JAVASCRIPT</li>
+</ul>
