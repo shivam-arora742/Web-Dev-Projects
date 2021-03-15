@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <script>
+        obj={a:1,b:2,c:3};
+        jso = JSON.stringify(obj);
+        console.log(jso);
+        console.log(typeof jso);
+        jsp=JSON.parse('{"a":1,"b":2,"c":3}');
+        console.log(jsp);
+        // ECMA scripts and its versions
+        // BACK TICKS: TEMPLATE LITERALS
+        a=34;
+        console.log(`he is at ${a}`);
+    </script>
+</body>
+</html>
