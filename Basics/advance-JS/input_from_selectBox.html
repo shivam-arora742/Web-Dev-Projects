@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT FROM SELECTBOX</title>
+    <script>
+        check=()=>{
+            let a=document.getElementById("box");
+        //    alert value of option selected dynamically;
+        // basic code:
+        if(a.selectedIndex==0){
+            alert(a.options[0].value);
+        }
+        else if(a.selectedIndex==1){
+            alert(a.options[1].value);
+        }
+        else{
+            alert(a.options[2].value);
+        }
+        // higher code:
+        //    alert(a.options[a.selectedIndex].value);
+        }
+    </script>
+</head>
+<body>
+    <h1>INPUT FROM SELECTBOX</h1>
+    <!-- selectbox: -->
+    <select name="web dev" id="box">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JS">JS</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="check();">
+        CLICK HERE!!!;
+    </button>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM-VALIDATION-1</title>
+    <style>
+        body{
+            background-color: green;
+            color: wheat;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1{
+            text-decoration: underline goldenrod;
+        }
+    </style>
+    <script>
+        validate=()=>{
+            let name=document.getElementById("user");
+            let password=document.getElementById("pass");
+            // trim( method removes all blank spaces in the value fields)
+            if(name.value.trim()=="" || password.value.trim()==""){
+                alert("username & password are blanked");
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>FORM-VALIDATION-1</h1>
+<!-- THERE ARE 2 WAYS:
+    1-USE OF HTML INPUT ATTRIBUTE:REQUIRED
+    2-USE OF JS EVENT onsubmit. 
+-->
+    <!-- form method attribute defines what is the form of data transfer: URL(get)& HTTP(post) -->
+    <form action="exercise-1.html" method="GET" onsubmit="return validate();">
+        <!-- we have to add the JS event to form tag to validate its submission -->
+    <!--HTML INPUT ATTRIBUTE:REQUIRED
+        <input type="text" name="username" id="user" placeholder="username" required> -->
+    <input type="text" name="username" id="user" placeholder="username">
+    <br>
+    <br>
+    <!-- USE OF JS EVENT onsubmit -->
+    <input type="password" name="password" id="pass" placeholder="password">
+    <br>
+    <br>
+    <button type="submit">SUBMIT HERE!!</button>
+    </form>
+</body>
+</html>

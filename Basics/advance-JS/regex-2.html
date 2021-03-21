@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGULAR EXPRESSION-2</title>
+    <script>
+        validate=()=>{
+
+        // regex creation:
+        // here 'imple' is fixed but 's' could be replaced with 'd or p';
+        // let regx=/[sdp]imple/i; 
+        // for range of character set:
+        // let regx=/[a-z A-Z]imple/i;
+        // all characters from a to z will apply in both cases.
+
+        // to exclude some characters:
+        let regx=/[^12]abc/i;
+
+        // validation:
+        var user=document.getElementById("uname");
+        if(regx.test(user.value)){
+             /* test() is a method of regex which will compare the regex expression with the
+              (username) input value & return boolean result; */
+            alert("valid");
+            let invalid=document.getElementById("invalid");
+            invalid.style.visibility="hidden";
+            // user.style.border="3px white solid";
+        }
+        else {
+            let invalid=document.getElementById("invalid");
+            invalid.style.visibility="visible";
+            user.style.border="3px red solid";
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>REGULAR EXPRESSION-2</h1>
+    <hr>
+    <br>
+    <form>
+        <input type="text" name="USERNAME" id="uname" placeholder="USERNAME">
+        <label id="invalid" style="color:red; visibility:hidden">INVALID USERNAME</label>
+        <br>
+        <br>
+        <button type="button" onclick="validate();">VALIDATE</button>
+    </form>
+</body>
+</html>

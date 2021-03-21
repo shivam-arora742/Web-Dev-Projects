@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM  VALIDATION-2</title>
+    <script>
+       validate=()=>{
+           let uname=document.getElementById("user");
+           let pname=document.getElementById("pass");
+        //    to validate blank spaces:
+           if(uname.value.trim()==""){
+               uname.style.border="3px solid red";
+               document.getElementById('ulbl').style.visibility="visible";
+               return false;
+           }
+           else if(pname.value.trim()==""){
+            pname.style.border="3px solid red";
+            document.getElementById('plbl').style.visibility="visible";
+            return false;
+           }
+        //    to validate length of password(=<8) & username(>=5)
+        else if(uname.value.trim().length<5){
+            uname.style.border="3px solid yellow";
+            document.getElementById('ulbl').style.visibility="visible";
+            return false;
+        }
+        else if(pname.value.trim().length>8){
+            pname.style.border="3px solid yellow";
+            document.getElementById('plbl').style.visibility="visible";
+            return false;
+        }
+        else{
+            return true;
+        }
+       } 
+    </script>
+</head>
+<body>
+    <h1>FORM  VALIDATION-2</h1>
+    <br>
+    <form action="exercise-1.html" method="GET" onsubmit="return validate();">
+        <input type="text" name="username" id="user" placeholder="username">
+        <label id="ulbl" style="color:red; visibility:hidden">INVALID USERNAME</label>
+        <br>
+        <br>
+        <input type="password" name="password" id="pass" placeholder="password">
+        <label id="plbl" style="color:red; visibility:hidden">INVALID PASSWORD</label>
+        <br>
+        <br>
+        <button type="submit">SUBMIT HERE!!</button>
+    </form>
+</body>
+</html>

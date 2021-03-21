@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-ANIMATIONS-2</title>    
+    
+    <style>
+        body{
+            background-color: coral;
+            text-align: center;
+        }
+        h1,h3{
+            text-decoration: underline black;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS-ANIMATIONS-2</h1>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <img src="hrt.png" alt="dragon" id="img_1" onmouseover="increase();" height="100" width="100">
+    <script type="text/javascript">
+        var width_elem=100;
+        // document.getElementById("img").style.width=width;
+        var diff=2;
+        var Intervalid=0;
+        // width of image is default:200px;
+        function increase(){
+            clearInterval(Intervalid);
+            Intervalid=setInterval(zoomIn,20);
+        }
+        function zoomIn(){
+            if(width_elem<200){
+                width_elem=diff+width_elem;
+                document.getElementById("img_1").style.width=width_elem;
+                console.log(width_elem);
+            }
+            else{
+                clearInterval(Intervalid);
+            }
+        }
+    </script>
+</body>
+</html>

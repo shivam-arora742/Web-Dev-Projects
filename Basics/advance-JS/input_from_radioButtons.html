@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT FROM RADIO BUTTONS</title>
+    <script>
+        check_val=()=>{
+           let a=document.getElementById('htmlbtn');
+           let b=document.getElementById('cssbtn')
+        //    a.checked means whether the radio button is clicked or not.
+            if(a.checked==true){
+                alert(a.value);
+            }
+            else{
+                alert(b.value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>INPUT FROM RADIO BUTTONS</h1>
+    <!-- radio button attribute name should be same for all so that one value is selected at a time. -->
+    <input type="radio"  value="html" name="right" id="htmlbtn">
+    HTML
+    </input>
+    <input type="radio"  value="css" name="right" id="cssbtn">
+    CSS
+    </input>
+    <br>
+    <br>
+    <input type="button" value="check me!!" onclick="check_val();">
+</body>
+</html>
