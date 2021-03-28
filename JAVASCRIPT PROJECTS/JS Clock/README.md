@@ -5,5 +5,6 @@
   <li>Css-Position:Absolute & Relative.</li>
   <li>Css - Psuedo Element [::after] </li>
   <li>Css property - z-index:(value)</li>
+  <li>Css Flexbox for positioning of CLock.</li>
   <li>Js -Template Literal : `${}`-for DOM manipulation of clock hands.</li>
 </ul>
