@@ -1,0 +1,156 @@
+
+/* import google fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+
+/* style for whole html elements. */
+*{
+    /* The box-sizing property allows us to include the padding and border in an element's total width and height.
+    If you set box-sizing: border-box; on an element, padding and border are included in the width and height: */
+
+    box-sizing: border-box;
+    font-family: 'Chango', cursive;   
+} 
+
+/* styling for heading h1 */
+#heading{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-decoration: underline green;
+}
+
+/* style for the body. */
+body{
+    color: #196F3D;
+    background-color:  #5DADE2 ;
+    /* to center clock at center of screen. */
+    /* css flexbox  */
+    display: flex;
+    /* to fill items column wise. */
+    flex-direction: column;
+    /* align item horizontally at centre. */
+    justify-content: center;
+    /* align item vertically at centre. */
+    align-items: center;
+}
+
+/* style for clock class container. */
+.clock{
+    /* box for clock outline. */
+    height: 300px;
+    width: 300px;
+    /* background color as white with 0.6 opacity. */
+    background-color: rgba(255,255,255,0.8);
+    /* for circular shape: */
+    border-radius: 50%;
+    border:5px solid #154360; 
+    position: relative;
+}
+
+/* basic styling for numbers container. */
+.clock .number{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 20px;
+}
+
+/* individual adjustment of numbers. */
+.clock .number1{
+    transform: rotate(30deg);
+}
+.clock .number2{
+    transform: rotate(60deg);
+}
+.clock .number3{
+    transform: rotate(90deg);
+}
+.clock .number4{
+    transform: rotate(120deg);
+}
+.clock .number5{
+    transform: rotate(150deg);
+}
+.clock .number6{
+    transform: rotate(180deg);
+}
+.clock .number7{
+    transform: rotate(210deg);
+}
+.clock .number8{
+    transform: rotate(240deg);
+}
+.clock .number9{
+    transform: rotate(270deg);
+}
+.clock .number10{
+    transform: rotate(300deg);
+}
+.clock .number11{
+    transform: rotate(330deg);
+}
+
+
+
+/* clock hands: */
+
+/* basic settings: */
+.clock .hands{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin:bottom ;
+    /* to align hand with number in x axis */
+    transform: translateX(-50%) ;
+    /* transform: rotate(180deg); */
+    /* to align all hands to bottom (center of clock) */
+    transform-origin:bottom;
+    border: 1px solid white;
+    border-radius: 10px;
+    /* to place the hand above number. */
+    z-index: 10;
+}
+
+/* individual settings: */
+.clock .hands.seconds{
+    width: 4.5px;
+    height: 40%;
+    background-color: red;
+    /* transform: rotate(30deg); */
+}
+
+.clock .hands.hour{
+    width: 8px;
+    height: 35%;
+    background-color: black;
+}
+
+.clock .hands.minutes{
+    width: 6.5px;
+    height: 40%;
+    background-color:grey;
+    /* transform: rotate(90deg); */
+}
+
+/* for black circle at center of clock to hold hands. */
+.clock::after{
+    /* create div after wards with content as " " */
+    content: " ";
+    /* mark the block with width & heightv & bg color. */
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    /* mark it at center of clock using position ,top & left attributes. */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    /* to align it properly at center of clock. */
+    transform: translate(-50%,-50%);
+    /* The z-index property specifies the stack order of an element.
+     An element with greater stack order is always in front of an element with a lower stack order. */
+    z-index: 11;
+    /* some border styling. */
+    border:1.5px solid darkgray;
+    border-radius: 50%;
+}
