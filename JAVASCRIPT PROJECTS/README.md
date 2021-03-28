@@ -6,4 +6,5 @@
       <li>FADE INN--OUT OF IMAGE</li>
     </ul>
   </li>
+  <li>Vanilla Javascript Clock.</li>
 </ul>
