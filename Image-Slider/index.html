@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favIcon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome cdn bootstrap for butons: -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>IMAGE SLIDER</title>
+</head>
+<body>
+    <h1>JS IMAGE CARASOUEL</h1>
+    <br>
+    <br>
+    <!-- container to hold slider -->
+    <div class="container">
+        <!-- arrow buttons for next and previous operation: -->
+        <i class="fa fa-arrow-right" aria-hidden="true" id="nxtbtn"></i>
+        <i class="fa fa-arrow-left" aria-hidden="true" id="prevbtn"></i>
+        <!-- slider to hold images -->
+        <div class="slider">
+            <img src="img/pic6.jpg" width="800px" id="lastClone" alt="avngr">
+            <img src="img/pic1.png" width="800px" alt="avngr">
+            <img src="img/pic2.jpg" width="800px" alt="avngr">
+            <img src="img/pic3.jpg" width="800px" alt="avngr">
+            <img src="img/pic4.jpeg" width="800px" alt="avngr">
+            <img src="img/pic5.jpg" width="800px" alt="avngr">
+            <img src="img/pic6.jpg" width="800px" alt="avngr">
+            <img src="img/pic1.png" width="800px" id="firstClone" alt="avngr">
+        </div>
+    </div>
+    <!-- 2 buttons for previous and next images 
+        they are removed as we have  added font awesome icons.
+    <button id="prevbtn">Prev</button>
+    <button id="nxtbtn">Next</button> -->
+    <script src="app.js"></script>
+</body>
+</html>
