@@ -8,4 +8,5 @@
   </li>
   <li>Vanilla Javascript Clock.</li>
   <li>JS IMAGE Carousel</li>
+  <li>Js-TODO APP</li>
 </ul>

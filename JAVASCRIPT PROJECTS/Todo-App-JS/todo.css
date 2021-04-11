@@ -1,0 +1,134 @@
+/* Universal Styling: */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling: */
+body{
+    background-color: #F1C40F;
+    color: #273746;
+    font-family: 'Poppins', sans-serif;
+
+    /* The min-height property defines the minimum height of an element. 
+       vh-Relative to 1% of the height of the viewport         */
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header{
+    font-size: 25px;
+    text-decoration: underline;
+    background-color: red;
+}
+
+/* Styling for both header and form elements. */
+header,form{
+    min-height: 25vh;
+    
+    /* flexbox properties to align items at centre,horizontally and vertically.  */
+    display: flex;
+     justify-content: center;    /* horizontally center. */
+    align-items: center;          /* vertically center. */
+}
+
+/* Form-Input and Button Styling */
+form input,form button{
+border: none;
+background: white;
+padding: 0.5rem;  /*rem-Relative to font-size of the root element*/
+font-size: 2rem;
+}
+
+/* Form Button Styling  */
+form button{          /*(descendant selector)*/
+    color:#e4b312;
+    background-color: white;
+    cursor: pointer;   /*for clicking purpose.*/
+    padding: 0.5rem;
+}
+
+/* Form Button:pseudo class Hover Styling */
+form button:hover{
+    background-color: black;
+    color:red;
+}
+
+/* Display container styling: */
+.todo-container{
+    /* border:2px solid black; */
+    /* align items at centre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Todo list styling  */
+.todo-list{
+    /* border: 2px solid red; */
+    list-style:none;
+    min-width: 35%;
+}
+
+
+/* JS_DOM_Created element styling */
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+
+/* TODO div child LI styling */
+.todo li{
+    /* border: 2px solid blue; */
+    flex: 1.2;
+}
+
+/* todo buttons basic styling */
+.todoTrash,.todoCheck{
+    font-size: 1.2rem;
+    color:white;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+/* todo buttons individual  styling */
+.todoCheck{
+    background-color: #2B7118;
+}
+
+.todoCheck:hover{
+background-color: black;
+box-shadow: 2px 2px 2px ;
+color: #2B7118;
+}
+
+.todoTrash{
+    background-color:  #E74C3C ;
+}
+
+.todoTrash:hover{
+    background-color: black;
+    box-shadow: 2px 2px 2px ;
+    color: #E74C3C;
+}
+
+
+.todo-list{
+    padding: 0rem  0.5rem;
+}
+
+/* the pointer-events property takes eleven possible values, all but three of them are reserved for use with SVG */
+/* prevents all click, state and cursor options on the specified HTML element */
+/* The element is never the target of pointer events; however, pointer events may target its descendant elements if those descendants have pointer-events set to some other value. */
+.fa-check-circle, .fa-trash{
+    pointer-events: none;
+}
