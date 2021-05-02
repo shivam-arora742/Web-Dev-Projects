@@ -9,4 +9,5 @@
   <li>Vanilla Javascript Clock.</li>
   <li>JS IMAGE Carousel</li>
   <li>Js-TODO APP</li>
+  <li>Js-Memory-Card-Game</li>
 </ul>
