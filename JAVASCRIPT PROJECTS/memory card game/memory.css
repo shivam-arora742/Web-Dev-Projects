@@ -1,0 +1,87 @@
+
+/* Universal Styling: */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling: */
+body{
+    height: 100vh;
+    /* Css flexbox Container */
+    display: flex;
+    background-color:#071FBD  ; 
+}
+
+/* Memory-Game Board Styling: */
+.memory-game{
+    width: 670px;
+    height: 640px;
+    /* To align it at center. */
+    margin:auto;
+    /* CSS -flexbox Container */
+    display: flex;
+    /* Make the flexible items wrap if necessary.
+    Used for responsiveness. */
+    flex-wrap:wrap;
+    border: 2px solid #ECF0F1;
+    /* The perspective CSS property determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective. */
+    perspective: 1000px;
+}
+
+
+/* Memory Cards Styling: */
+
+.memorycard{
+    /* The calc() function performs a calculation to be used as the property value. */
+    
+    /* divide width into 4 columns. */
+    width: calc(25% - 10px);
+
+     /* divide width into 3 rows. */
+     height: calc(33.333% - 10px);
+    
+     /* An element with position: relative; is positioned relative to its normal position */
+    position: relative;
+
+    border: 2px solid aqua;
+    margin: 5px;
+    
+    /* The scale() method increases or decreases the size of an element (according to the parameters given for the width and height). */
+    transform: scale(1);
+    /* The transform-style property specifies how nested elements are rendered in 3D space. */
+    transform-style: preserve-3d;
+    /* The transition effect will start when the specified CSS property (width) changes value. */
+    transition: transform .5s;
+}
+
+/* Active Cards Styling */
+.memorycard:active{
+    /* Onclicking the card , it size will increase 2twice and with time 5 sec. */
+    transform: scale(2);
+    transition: transform .5s;
+}
+
+.memorycard.flip{
+    transform: rotateY(180deg);
+}
+
+/* Front&Back face  styling*/
+.front-face,.back-face{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    /* Position in relation to card container */
+    position: absolute;
+    background: #1C7CCC;
+    background-color: blue;
+
+    /* To hide front face of the card */
+    backface-visibility: hidden;
+}
+
+.front-face{
+    transform:rotateY(180deg);
+}

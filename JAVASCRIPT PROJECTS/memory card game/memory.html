@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--adding css file  -->
+    <link rel="stylesheet" href="memory.css">
+    <!-- adding favIcon  -->
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <title>MEMORY-GAME-JS</title>
+</head>
+
+<body>
+    <!-- memory-game:section for game board. -->
+    <section class="memory-game" >
+      
+     <!-- memoryCard:divs to contain all images in form of card. -->
+     <!-- The data-* attribute gives us the ability to embed custom data attributes on all HTML elements. -->
+     <!-- data-framework attribute: used for matching of cards!! -->
+        <div class="memorycard" data-framework="aurelia">
+            <!-- added 12 front & 12 back face images for each card.  
+            back-face image is same for all cards.-->
+            <img src="aurelia.png" alt="aurelia" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+
+        <div class="memorycard" data-framework="aurelia">
+            <img src="aurelia.png" alt="aurelia" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+        
+        <div class="memorycard" data-framework="vue">
+            <img src="vue.png" alt="vue" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+        
+        <div class="memorycard" data-framework="vue">
+            <img src="vue.png" alt="vue" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+        
+        <div class="memorycard" data-framework="angular">
+            <img src="angular.png" alt="angular" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+        
+        <div class="memorycard" data-framework="angular">
+            <img src="angular.png" alt="angular" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+        
+        <div class="memorycard" data-framework="ember">
+            <img src="ember.jpg" alt="ember" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+        
+        <div class="memorycard" data-framework="ember">
+            <img src="ember.jpg" alt="ember" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+        
+        <div class="memorycard" data-framework="backbone">
+            <img src="backbone.png" alt="backbone" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+        
+        <div class="memorycard" data-framework="backbone">
+            <img src="backbone.png" alt="backbone" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+        
+        <div class="memorycard" data-framework="react">
+            <img src="react.svg" alt="react" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+        
+        <div class="memorycard" data-framework="react">
+            <img src="react.svg" alt="react" class="front-face">
+            <img src="js-badge.png" alt="js-badge" class="back-face">
+        </div>
+    
+    </section>
+        
+    <!--adding js file  -->
+    <script src="memory.js"></script>
+
+</body>
+
+</html>
