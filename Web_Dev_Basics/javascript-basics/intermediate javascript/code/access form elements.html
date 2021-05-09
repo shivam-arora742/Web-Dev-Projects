@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ACCESS-FORM-ELEMENTS JavaScript</title>
+    <script>
+    
+        function value(){
+            var inputs=document.getElementsByTagName("input");
+            var mssge="ACCESS-FORM-ELEMENTS JavaScript";
+            for(i=0;i<inputs.length;i++){
+                if(inputs[i].getAttribute('type')=='text'){
+                    mssge+=input[i].getAttribute('name')+":";
+                    mssge+=inputs[i].value+"\n";
+                }
+            }
+            alert(mssge);
+            
+        }
+        
+    
+    
+    </script>
+</head>
+
+<body>
+    <h1>ACCESS-FORM-ELEMENTS</h1>
+    <form>
+NAME:    <input type="text" id="text-name" name="name"/>
+EMAIL:   <input type="text" id="text-email" name="email"/>
+        <input type="button"  value="DONE!!" onCLICK="value();"/>
+    </form>
+</body>
+</html>

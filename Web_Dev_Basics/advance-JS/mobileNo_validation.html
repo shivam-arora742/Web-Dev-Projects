@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILE NUMBER VALIDATION</title>
+    <script>
+        mobile_validate=()=>{
+            var phone=document.getElementById("number").value;
+            // REGEX START DENOTED BY ^ & ENDED BY $
+            // {}: DENOTES REPEATATION OF PATTERN.
+            // special characters for validation:/d,/s,/w,/t;
+            let regx=/^[7-9]\d{9}$/;
+            if(regx.test(phone)){
+                let board=document.getElementById("sign-board");
+                board.innerHTML="VALID";
+                board.style.visibility="visible";
+                board.style.color="green";
+
+            }
+            else{
+                let board=document.getElementById("sign-board");
+                board.innerHTML="INVALID";
+                board.style.visibility="visible";
+                board.style.color="red";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>MOBILE NUMBER VALIDATION</h1>
+    <hr>
+    <form >
+    <input type="text"  id="number"/>
+    <label id="sign-board" style="color:red;visibility: hidden;"> invalid</label>
+    <br>
+    <button onclick="mobile_validate()" type="button">validate</button>
+    </form>
+</body>
+</html>

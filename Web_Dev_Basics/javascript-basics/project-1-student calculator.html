@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT CALCULATOR</title>
+    <link rel="stylesheet" href="project-1.css">
+</head>
+<body>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="https://www.youtube.com/watch?v=AEOVHGefS1g&t=265s">HELP</a>
+        <input type="search" placeholder="SEARCH HERE">
+        <button>search</button>
+    </nav>
+    <script>
+        const calcy=()=>{
+            let CS301=document.getElementById('CS-301').value;
+            let CS302=document.getElementById('CS-302').value;
+            let CS303=document.getElementById('CS-303').value;
+            let CS304=document.getElementById('CS-304').value;
+            let CS305=document.getElementById('CS-305').value;
+            let CS306=document.getElementById('CS-306').value;
+            let totalGrades= parseFloat(CS301)+parseFloat(CS302)+parseFloat(CS303)+parseFloat(CS304)+parseFloat(CS305)+parseFloat(CS306);
+            alert("TOTAL:"+totalGrades);   
+            let perc=   (totalGrades/6);
+            alert("PERCENTAGE:"+perc);
+            let grades="";
+            if(perc<=100 &&perc>=80){
+                grades="A";
+            }
+            else if(perc<80 &&perc>=50){
+                grades="B";
+            }
+            else if(perc<50 && perc>=33){
+                grades="C";
+            } 
+            else{
+                grades="F";
+            }
+            document.getElementById('result').innerHTML=`<h1>"TOTAL IS ${totalGrades}.
+            PERCENTAGE IS ${perc} . GRADE IS ${grades}."</h1>`
+             }
+    </script>
+    <div id="heading">
+        <h1>STUDENT REPORT GENERATOR</h1>
+        <button id="show" onclick="calcy();">SHOW RESULT</button>
+    </div>
+    <div id="text">
+        <input type="text" id="CS-301" placeholder="CS-301">
+        <br>
+        <input type="text" id="CS-302" placeholder="CS-302">
+        <br>
+        <input type="text" id="CS-303" placeholder="CS-303">
+        <br>
+        <input type="text" id="CS-304" placeholder="CS-304">
+        <br>
+        <input type="text" id="CS-305" placeholder="CS-305">
+        <br>
+        <input type="text" id="CS-306" placeholder="CS-306">
+    </div>
+    <div id="result">
+        <h1></h1>
+    </div>
+    <!-- <footer>
+        <p>THIS PROJECT IS COMPLETED BY SHIBU_A AND ALL RIGHTS RESERVED TO HIM!!!</p>
+    </footer> -->
+</body>
+</html>

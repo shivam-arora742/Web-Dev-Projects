@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DOM :DOM : UPDATE ELEMENT DATA JavaScript</title>
+
+    <script>
+    
+        function update(){
+            document.getElementById("textValue").innerHTML=document.getElementById("text").value;
+        }
+    
+    </script>
+    
+</head>
+
+<body>
+    <h1>DOM :DOM : UPDATE ELEMENT DATA</h1>
+    <p id="textValue"></p>
+    <form>
+        <input type="text" id="text" onkeypress="update();"/>
+    </form>
+</body>
+</html>

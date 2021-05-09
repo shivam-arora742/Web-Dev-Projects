@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMAIL-VALIDATION</title>
+    <script>
+        validate=()=>{
+            let mail=document.getElementById("mail").value;
+           /*  // 1ST PART:
+            // note:\. to make dot a valid entry.
+            // to add range :
+            // 1-{start,end}
+            // let regex=/^([a-zA-Z0-9-\.]{2,100})$/;
+             // +:means to validate regex to 1 or more characters in expression.
+             let regex=/^([a-zA-Z0-9-\.]+)$/; */
+            /* //  2nd part:
+            let regex=/^([a-zA-Z0-9-\.]+)@([a-zA-Z-]+)$/; */
+            /* // 3rd part:
+            let regex=/^([a-zA-Z0-9-\.]+)@([a-zA-Z-]+).([a-z]{2,20})$/; */
+            // 4th part:
+            let regex=/^([a-zA-Z0-9-\.]+)@([a-zA-Z-]+).([a-z]{2,20})(.[a-z]{2,20})?$/;
+            if(regex.test(mail)){
+                document.getElementById("lbl").innerHTML="VALID MAIL ADDRESS";
+                document.getElementById("lbl").style.color="green";
+                document.getElementById("lbl").style.visibility="visible";
+            }else{
+                document.getElementById("lbl").innerHTML="INVALID MAIL ADDRESS";
+                document.getElementById("lbl").style.color="red";
+                document.getElementById("lbl").style.visibility="visible";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>EMAIL-VALIDATION</h1>
+    <br><hr><br>
+    <form action="#">
+        <input type="text" id="mail" placeholder="ENTER EMAIL">
+        <label id="lbl" style="color: red; visibility: hidden;">INVALID MAIL ADDRESS</label>
+        <br><br>
+        <button type="button" onclick="validate();">VALIDATE HERE !!</button>
+    </form>
+</body>
+</html>

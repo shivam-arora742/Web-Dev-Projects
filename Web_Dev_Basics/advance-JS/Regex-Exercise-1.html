@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Exercise-1</title>
+    <script>
+        validation=()=>{
+            let phone=document.getElementById("number").value;
+            let regx=/^9\w{8}0$/;
+            if(regx.test(phone)){
+                document.getElementById("lbl").innerHTML="VALIDATED";
+                document.getElementById("lbl").style.color="blue";
+                document.getElementById("lbl").style.visibility="visible";
+
+            }
+            else{
+                document.getElementById("lbl").innerHTML="NON-VALIDATED";
+                document.getElementById("lbl").style.color="red";
+                document.getElementById("lbl").style.visibility="visible";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Regex Exercise-1</h1>
+    <form action="#">
+        <input type="text" name="phone" id="number"/>
+        <label id="lbl" style="color:red; visibility: hidden;"> INVALID</label>
+        <button type="button" onclick="validation();">VALIDATION</button>
+    </form>
+</body>
+</html>
